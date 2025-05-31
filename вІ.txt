@@ -1,0 +1,81 @@
+# Technical Specification for Meme Coin Website (Solana Focus)
+
+## Project Name: FashionDogos
+
+## General Principles:
+* **Design:** **VIBRANT, FUN, and EYE-CATCHING.** The site will prominently feature a playful color palette with bright accents, including `accent1` (#ff61d2), `accent2` (#fe9090), `accent3` (#00f2fe), `accent4` (#43e97b), and `accent5` (#fff200), as defined in `styles.css`. Dynamic and energetic elements will be used throughout.
+* **Styling:** Directly inspired by the humorous and quirky nature of the provided dog images. Emphasizes joy, community, and lightheartedness through bold typography (using 'Luckiest Guy' font) and contrasting colors.
+* **Animations:** Smooth, bouncy, and frequent, leveraging keyframes like `logoWiggle`, `popName`, `btnBounce`, `btnPop`, `btnWiggle`, `btnRotate`, `cardAppear`, `cardBounce`, `frogWiggle`, `frogPop`, and `fadeInUp` from `styles.css` to create a lively and engaging user experience.
+* **Interactivity:** Highly engaging elements that invite users to play and explore, including hover effects, animated buttons, and potentially hidden easter eggs.
+* **No Scams:** Strict exclusion of any terms or implications of "rug pull," "honeypot," and other fraudulent schemes. Focus on community, humor, and the joy of a decentralized, fun project.
+* **Solana Integration:** Clear and simple pathways for Solana users.
+
+## Website Structure:
+
+### 1. Home Page (Index)
+* **Central Block:**
+    * **Bold, dynamic, and playfully designed** meme coin name: "FashionDogos", centrally placed. The `name` element will use a large font size, `accent5` color, letter spacing, and text shadows with `accent1` and `accent3`, featuring a `popName` animation.
+    * Below it, prominently displayed: "LAUNCHING AT PUMP.FUN".
+    * **Animation:** The name will exhibit a "bouncing" effect and bright glow, with subtle particle effects (like confetti) appearing around them on load or hover, as suggested by `popName` animation.
+* **Background:**
+    * **Lively and animated.** The `body` background will utilize a linear gradient (`--main-bg: linear-gradient(135deg, #ff61d2 0%, #fe9090 40%, #00f2fe 100%);`), with subtle looping animations of elements from the dog images (e.g., small, stylized money bags floating, paw prints dancing), or a slideshow of the provided dog images with playful transitions.
+* **Navigation Menu:** Playful and easy to access, styled within the `header` section with a background gradient (`linear-gradient(90deg, #fff200 0%, #ff61d2 100%)`) and a bold border (`border-bottom: 6px double var(--accent3)`).
+    * Links: "About Us", "Tokenomics", "How to Buy", "Stories", "Community". Buttons (`.btn`) will feature gradients, bold borders, shadows, and animations like `btnBounce`, `btnWiggle` (for Pump button), and `btnRotate` (for Twitter button).
+
+### 2. "About Us" Section
+* **Heading:** "Unleash the Fun!" or "Our Bark-tastic Vision." Styled with `section-title` properties, including vibrant colors and text shadows.
+* **Content:** A brief, exciting, and lighthearted description of the project, its community-driven ethos, and why it's a fun addition to Solana. Paragraphs (`.about-text p`) will use a large font size, line height, and a `fadeInUp` animation.
+* **Visualization:** The section (`.about`) will have a background gradient (`linear-gradient(90deg, var(--accent3) 0%, var(--accent5) 100%)`) and a distinct left border (`border-left: 12px solid var(--accent1)`). Integration of images like the "Frenchie seal" (b49b6db9d895a80d070abfaab25a845d.jpg) or the "Chucky dog" (050719be6247ec68724c81a6c592e244.jpg) as playful mascots. Images could be animated to "wink" or "nod" subtly.
+* **Interactivity:** Sections of text could reveal hidden "treats" (small animations or sound effects) when clicked.
+
+### 3. "Tokenomics" Section
+* **Heading:** "The Treats Behind the Tail Wags!" or "Our Funomics." Styled with `section-title` properties.
+* **Content:**
+    * Total token supply (clearly stated).
+    * Distribution (e.g., "90% for community fun on Pump.fun, 10% for future tail-wagging initiatives").
+    * Zero or very low, clearly stated taxes, emphasizing simplicity for Solana users.
+    * Focus on transparent and fair distribution for community engagement.
+    * Token ticker: **$DOGOS**.
+* **Visualization:** Colorful, simple infographics using playful icons (bones, paw prints, smiling dogs). Numbers could appear with a "pop" animation. Graphs will be animated to "grow" or "fill up" with bright colors.
+
+### 4. "How to Buy" Section
+* **Heading:** "Ready to Join the Pack?" or "Snag Your Tokens!" Styled with `section-title` properties.
+* **Content:** Step-by-step instructions tailored for Solana:
+    1.  Get a Solana Wallet (e.g., Phantom, Trust Wallet, Solflare).
+    2.  Fund your wallet with SOL.
+    3.  Go to Pump.fun (Prominent button with direct link to your token's page). The "Pump" button will have a `pump-btn` animation.
+    4.  Swap SOL for **$DOGOS** and enjoy the fun!
+* **Visualization:** Bright, cartoonish icons for popular Solana wallets. The "money dog" (05747238b0c9c365d96abd47580eb30b.jpg) or "Doberman in a suit" (logo.jpg) could offer "advice" with speech bubbles that pop up on hover.
+* **Interactivity:** Each step could have a subtle animation or a "click me!" effect. The Pump.fun button should be large and inviting, perhaps with a pulsating border, using `btnBounce` animation.
+
+### 5. "Stories" Section
+* **Heading:** "Paws-itively Hilarious Tales!" or "Our Doggone Good Stories." Styled with `section-title` properties.
+* **Content:** The same 5 original, funny stories (100+ words each) from the previous specification, maintaining their lighthearted and non-crypto investment tone. Stories will be presented in `frog-card` elements with specific gradients, borders, shadows, and animations like `cardAppear` and `cardBounce`. Images within the cards (`.frog-img`) will have circular borders, shadows, and `frogWiggle`/`frogPop` animations.
+* **Interactivity:** Stories presented as vibrant "comic book panels" or "flipping cards." Users can click to "turn the page" or reveal the full story. Images like the "dog council" (banner.jpg) or "doll dog" (24926b3afaae1bfc79fc6d647e04478f.jpg) could be integrated as story icons or chapter dividers.
+* **Animation:** Card flips, page turns, or a "pop-up" effect when a story is selected, as suggested by `.frog-card:hover` effects.
+
+### 6. "Community" Section
+* **Heading:** "Join Our Puppy Party!" or "Connect with the Pack!" Styled with `section-title` properties.
+* **Content:** Large, colorful icons and direct links to social media platforms (Telegram, X/Twitter, Discord).
+* **Interactivity:** Icons could have playful bounce animations (`btnBounce`), confetti bursts on hover, or change color.
+
+### 7. Footer
+* Copyright information.
+* Minimalistic, easy-to-read links to important resources (e.g., "Privacy Policy," "Terms of Fun").
+* A small, animated paw print or wagging tail icon. The footer itself will have a gradient background and a distinct top border, with a shadow. It will also include an "easter egg" with a `hidden-frog` element that changes filter and opacity on hover, with a `frogPop` animation.
+
+## Technical Requirements:
+* **Technologies:** HTML5, CSS3 (leveraging modern CSS features for animations and vibrant styles as seen in `styles.css`), JavaScript (for dynamic interactivity and smooth transitions, potentially a lightweight library like GSAP for complex animations).
+* **Adaptability:** Fully responsive design for seamless viewing on all devices (mobile, tablet, desktop), with specific media queries as outlined in `styles.css`.
+* **Performance:** Optimized images (SVG for icons where possible, compressed JPEGs/PNGs for photos) and efficient code to ensure fast loading times on Solana.
+* **SEO:** Basic SEO optimization (meta tags, descriptive headings) to help users find the fun.
+
+## Important Notes:
+* **Color Palette:** Bright, contrasting, and energetic, as defined by the CSS variables (e.g., `--accent1`, `--accent2`, `--accent3`, `--accent4`, `--accent5`).
+* **Typography:** Fun, legible fonts, specifically 'Luckiest Guy', that convey a lighthearted mood.
+* **Visual Assets:** High-quality versions of your provided dog images, possibly with playful overlays or graphic elements.
+* **Language:** All website content and instructions should be in English.
+* Emphasize fun, community, and the unique spirit of the meme coin.
+
+---
+End of Technical Specification.
